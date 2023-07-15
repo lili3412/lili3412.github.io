@@ -29,14 +29,11 @@ figcaption.addEventListener("mouseleave", function() {
 });
 
 // Problem 5
-for(let i = 0; i < figures.length; i++) {
-  const figcaption = figures[i].querySelector("figcaption")
-  figcaption.tabIndex = 0;
-  figcaption.addEventListener("focus", function() {
-    figcaption.style.fontFamily = "Cursive";
-  });
+figcaption.tabIndex = 0;
+figcaption.addEventListener("focus", function() {
+  figcaption.style.fontFamily = "Cursive";
+});
 
-  figcaption.addEventListener("blur", function() {
-    figcaption.style.fontFamily = "";
-  });
-}
+figcaption.addEventListener("blur", function() {
+  figcaption.style.fontFamily = "";
+});
